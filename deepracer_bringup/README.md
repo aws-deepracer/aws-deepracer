@@ -4,7 +4,7 @@
 
 The AWS DeepRacer repository contains the configuration and launch files to enable ROS Navigation Stack on AWS DeepRacer and control the vehicle using teleop-twist-keyboard, along with the core components to integrate AWS DeepRacer with ROS Navigation stack. For detailed information, see [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
 
-The deepracer_bringup package consists of the launch files required to launch ROS Navigation simulation/device flow along with the recommended config files required for the launch. The config files can be modified as per requirement.
+The **deepracer_bringup** package consists of the launch files required to launch ROS Navigation simulation/device flow along with the recommended config files required for the launch. The config files can be modified as per requirement.
 
 ## License
 
