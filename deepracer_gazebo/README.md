@@ -4,7 +4,7 @@
 
 The AWS DeepRacer repository contains the configuration and launch files to enable ROS Navigation Stack on AWS DeepRacer and control the vehicle using teleop-twist-keyboard, along with the core components to integrate AWS DeepRacer with ROS Navigation stack. For detailed information, see [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
 
-AWS DeepRacer uses [Ackermann front-wheel steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry) to turn wheels on the inside and outside of a turn. This mean that the left and right front wheels generally turn at different angles. The deepracer_gazebo package contains the deepracer_drive gazebo plugin that has subscribes to the `/cmd_vel` topic and publishes the corresponding joint velocity and position commands to move the car in Gazebo environment. It also takes care of publishing the `/odom` messages required by the Nav2 packages.
+AWS DeepRacer uses [Ackermann front-wheel steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry) to turn wheels on the inside and outside of a turn. This mean that the left and right front wheels generally turn at different angles. The **deepracer_gazebo** package contains the **deepracer_drive** gazebo plugin that has subscribes to the `/cmd_vel` topic and publishes the corresponding joint velocity and position commands to move the car in Gazebo environment. It also takes care of publishing the `/odom` messages required by the Nav2 packages.
 
 ## License
 
@@ -16,7 +16,7 @@ The source code is released under [Apache 2.0](https://aws.amazon.com/apache-2-0
 
         <plugin name='gazebo_ros_deepracer_drive' filename='libgazebo_ros_deepracer_drive.so'>
 
-            <update_rate>30.0</update_rate>
+            <update_rate>15.0</update_rate>
 
             <!-- wheels -->
             <front_left_joint>front_left_wheel_joint</front_left_joint>
