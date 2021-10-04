@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<robot name="agent" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <gazebo reference="laser">
+    <sensor type="ray" name="hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>$(arg lidar_360_degree_sample)</samples>
+            <resolution>$(arg lidar_360_degree_horizontal_resolution)</resolution>
+            <min_angle>$(arg lidar_360_degree_min_angle)</min_angle>
+            <max_angle>$(arg lidar_360_degree_max_angle)</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>$(arg lidar_360_degree_min_range)</min>
+          <max>$(arg lidar_360_degree_max_range)</max>
+          <resolution>$(arg lidar_360_degree_range_resolution)</resolution>
+        </range>
+        <noise>
+          <mean>$(arg lidar_360_degree_noise_mean)</mean>
+          <stddev>$(arg lidar_360_degree_noise_stddev)</stddev>
+        </noise>
+      </ray>
+      <!--<plugin name="gazebo_ros_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser</frameName>
+      </plugin>-->
+       <plugin name="rp_lidar" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <!-- <namespace>/laser</namespace> -->
+            <argument>~/out:=scan</argument>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>laser</frame_name>
+        </plugin>
+    </sensor>
+  </gazebo>
+</robot>

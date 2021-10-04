@@ -1,0 +1,8 @@
+- git:
+    uri: https://github.com/aws-deepracer/aws-deepracer-camera-pkg.git
+    local-name: aws-deepracer-camera-pkg
+    version: main
+- git:
+    uri: https://github.com/aws-deepracer/aws-deepracer-servo-pkg.git
+    local-name: aws-deepracer-servo-pkg
+    version: main
