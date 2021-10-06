@@ -195,14 +195,16 @@ This means that the AWS DeepRacer is now ready to navigate! Use the middle mouse
 
 ### **Clean up**
 
-In order to clean up any resources used, open the AWS RoboMaker console.
+To clean up any resources used:
 
-1. Close your development environment. You can keep your environment for future work, or you can delete it.
+1. Open the **AWS RoboMaker console**.
+2. Close your development environment. You can keep your environment for future work, or you can delete it.
 
 To delete your development environment:
-    1. In the AWS RoboMaker console, in the AWS RoboMaker menu, navigate to **Development environments**.
-    2. Select your environment from the list of environments.
-    3. Choose **Delete**.
+
+ 1. In the **AWS RoboMaker console**, in the **AWS RoboMaker menu**, navigate to **Development environments**.
+ 2. Select the environment that you created in step 1.1.1 from the list of environments. For example, **deepracer-nav2-env**. 
+ 3. Choose **Delete**.
 
 ### **Part 2.1 — Clone and build the robot packages on the AWS DeepRacer device**
 
