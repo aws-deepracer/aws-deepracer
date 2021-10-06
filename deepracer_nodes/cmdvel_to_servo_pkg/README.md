@@ -2,7 +2,7 @@
 
 ## Overview
 
-The cmdvel to servo ROS package creates the cmdvel_to_servo_node which decides the action messages (servo control messages specifically angle and throttle) to be sent out after converting the `cmd_vel`. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
+The cmdvel to servo ROS package creates the cmdvel_to_servo_node which decides the action messages (servo control messages specifically angle and throttle) to be sent out after converting the `cmd_vel`. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
 
 ## License
 
@@ -153,4 +153,4 @@ The `cmdvel_to_servo_pkg_launch.py` launch file included in this package gives a
 ## Resources
 
 * [Getting started with AWS DeepRacer OpenSource](https://github.com/aws-deepracer/aws-deepracer-launcher/blob/main/getting-started.md)
-* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
+* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md)

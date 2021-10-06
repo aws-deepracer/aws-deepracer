@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Enable DeepRacer Nav ROS package creates the enable_deepracer_nav_node which enables the camera and servo GPIO on the AWS DeepRacer. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
+The Enable DeepRacer Nav ROS package creates the enable_deepracer_nav_node which enables the camera and servo GPIO on the AWS DeepRacer. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
 
 ## License
 
@@ -113,4 +113,4 @@ The `enable_deepracer_nav_pkg_launch.py` launch file included in this package gi
 ## Resources
 
 * [Getting started with AWS DeepRacer OpenSource](https://github.com/aws-deepracer/aws-deepracer-launcher/blob/main/getting-started.md)
-* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md)
+* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md)
