@@ -143,7 +143,7 @@ After a few seconds, you should see that the Virtual Desktop opens up in a new t
 
 **1.2.2 – Launch the nav_amcl_demo_sim flow**
 
-Open a terminal in the Virtual Desktop
+Open a terminal in the Virtual Desktop.
 
 <p align="center">
 <img src="/media/dr-sim-application-list-1.png" height="450" >
@@ -338,4 +338,4 @@ Use the *Navigation2Goal* button on the tool bar to set a goal for the AWS DeepR
 
 ### **Conclusion**
 
-These new additions to the AWS DeepRacer device software stack help in integrating ROS Navigation stack, and leverage the open source packages to navigate the car. 
+The new open-sourced AWS DeepRacer software packages, used with other open-source packages compatible with the ROS Nav2 stack, extend AWS's DeepRacer's autonomous navigation capabilities in simulations and on the device. The compatibility with ROS Navigation stack and the device's LiDAR sensor and Ackermann steering make it a versatile prototyping platform.
