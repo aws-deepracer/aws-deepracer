@@ -45,7 +45,7 @@ The [REP-105](https://www.ros.org/reps/rep-0105.html) (ROS Enhancement Proposal)
 According to community standards, there are 2 major transformations involving the coordinate frames that need to be provided within the navigation project. The `map` to `odom` transform is provided by a positioning system (localization, mapping, SLAM) and `odom` to `base_link` by an odometry system. This `map → odom → base_link` frames and their corresponding TF transformations are the core requirements for any robot to work with the navigation stack.
 
 <p align="center">
-<img src="/media/dr-sim-tf-transforms-1.png" height="450" >
+<img src="/media/dr-sim-tf-transforms-1.png" height="350" >
 </p>
 
 
@@ -85,13 +85,13 @@ This section will guide you through cloning and building the demo application.
 We will be creating an AWS RoboMaker integrated development environment (IDE) to run the AWS DeepRacer simulation. From the AWS RoboMaker menu, select Development Environments then Create environment.
 
 <p align="center">
-<img src="/media/dr-sim-robomaker-list-dev-env-1.png" height="450" >
+<img src="/media/dr-sim-robomaker-list-dev-env-1.png">
 </p>
 
 Name your environment **deepracer-nav2-env**, choose **Foxy (Latest)** as your ROS distribution, and click **Create**.
 
 <p align="center">
-<img src="/media/dr-sim-robomaker-create-dev-env-1.png" height="450" >
+<img src="/media/dr-sim-robomaker-create-dev-env-1.png">
 </p>
 
 After a few seconds, you should see that the development environment appears.
@@ -132,7 +132,7 @@ This section will guide you through viewing the simulation and navigating the AW
 Open the Virtual Desktop in your Development Environment.
 
 <p align="center">
-<img src="/media/dr-sim-launch-virtual-desktop-1.png" height="450" >
+<img src="/media/dr-sim-launch-virtual-desktop-1.png" >
 </p>
 
 After a few seconds, you should see that the Virtual Desktop opens up in a new tab.
