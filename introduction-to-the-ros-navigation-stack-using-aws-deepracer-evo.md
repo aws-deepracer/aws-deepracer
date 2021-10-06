@@ -268,7 +268,7 @@ ros2 launch deepracer_bringup deepracer.launch.py
 ```
 source /opt/ros/foxy/setup.bash
 source ~/deepracer_nav2_ws/aws-deepracer/install/setup.bash
-ros2 launch deepracer_bringup deepracer_navigation_dr.launch.py use_sim_time:=False params_file:=/root/deepracer_nav2_ws/deepracer/deepracer_bringup/config/nav2_slam_params.yaml
+ros2 launch deepracer_bringup deepracer_navigation_dr.launch.py use_sim_time:=False params_file:=/root/deepracer_nav2_ws/aws-deepracer/deepracer_bringup/config/nav2_slam_params.yaml
 ```
 
 2.1.7.3 - Launch the SLAM toolbox:
