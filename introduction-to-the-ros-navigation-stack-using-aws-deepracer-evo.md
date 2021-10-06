@@ -182,7 +182,7 @@ rviz2
 <img src="/media/dr-sim-rviz-1.png" height="450" >
 </p>
 
-Open the `nav2_default_view.rviz` file from the [deepracer_description](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_description) package. In the rviz window you should now see the view looking down at the robot location. Set the initial robot location by choosing the *2D Pose Estimate* tool from the toolbar, then placing the arrow pointing up from the robots location. The robot footprint should now appear as a green square, and the map should appear highlighted in color.
+Open the `nav2_default_view.rviz` file from the [deepracer_description](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_description) package. In the rviz window you should now see the bird's-eye view of the robot's location. Set the initial robot location by choosing the *2D Pose Estimate* tool from the toolbar, then placing the arrow pointing up from the robot's location. The robot footprint should now appear as a green square, and the map should appear highlighted in color.
 
 This means that the AWS DeepRacer is now ready to navigate! Use the middle mouse scroll to zoom out and get a view of the entire map. Use the *Navigation2 Goal* button on the tool bar to set a goal for the AWS DeepRacer to move forward in the map. The AWS DeepRacer should immediately begin moving to the location you selected.
 
@@ -197,9 +197,12 @@ This means that the AWS DeepRacer is now ready to navigate! Use the middle mouse
 
 In order to clean up any resources used, open the AWS RoboMaker console.
 
-1. Close your development environment
-    1. You can either leave it for use another time 
-    2. *OR* you can delete it by choosing **Development environments** from the AWS RoboMaker menu, choosing your environment from the list (ex: **deepracer-nav2-env**), then selecting **Delete**
+1. Close your development environment. You can keep your environment for future work, or you can delete it.
+
+To delete your development environment:
+    1. In the AWS RoboMaker console, in the AWS RoboMaker menu, navigate to **Development environments**.
+    2. Select your environment from the list of environments.
+    3. Choose **Delete**.
 
 ### **Part 2.1 — Clone and build the robot packages on the AWS DeepRacer device**
 
@@ -338,4 +341,4 @@ Use the *Navigation2Goal* button on the tool bar to set a goal for the AWS DeepR
 
 ### **Conclusion**
 
-The new open-sourced AWS DeepRacer software packages, used with other open-source packages compatible with the ROS Nav2 stack, extend AWS's DeepRacer's autonomous navigation capabilities in simulations and on the device. The compatibility with ROS Navigation stack and the device's LiDAR sensor and Ackermann steering make it a versatile prototyping platform.
+The new open-sourced AWS DeepRacer software packages, used with other open-source packages compatible with the ROS Nav2 stack, extend AWS's DeepRacer's autonomous navigation capabilities in simulations and on the device. Compatibility with upgraded ROS Navigation stack and the device's LiDAR sensor and Ackermann steering make it a versatile prototyping platform.
