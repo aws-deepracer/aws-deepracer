@@ -2,7 +2,7 @@
 
 ## Overview
 
-The DeepRacer Interfaces ROS package is a foundational package that creates the custom service and message types that are used in the core AWS DeepRacer application. Here we have extended and modified the package to support ROS Nav2 integration packages. These services and messages defined are shared across the packages that are part of the AWS DeepRacer application and ROS Nav2 integration packages. For detailed information, see [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
+The DeepRacer Interfaces ROS package is a foundational package that creates the custom service and message types that are used in the core AWS DeepRacer application. Here we have extended and modified the package to support ROS Nav2 integration packages. These services and messages defined are shared across the packages that are part of the AWS DeepRacer application and ROS Nav2 integration packages. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
 
 ## License
 
@@ -58,4 +58,4 @@ Open a terminal on the AWS DeepRacer device and run the following commands as th
 ## Resources
 
 * [Getting started with AWS DeepRacer OpenSource](https://github.com/aws-deepracer/aws-deepracer-launcher/blob/main/getting-started.md)
-* [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
+* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).

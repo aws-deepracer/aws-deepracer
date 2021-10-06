@@ -2,7 +2,7 @@
 
 ## Overview
 
-The AWS DeepRacer repository contains the configuration and launch files to enable ROS Navigation Stack on AWS DeepRacer and control the vehicle using teleop-twist-keyboard, along with the core components to integrate AWS DeepRacer with ROS Navigation stack. For detailed information, see [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
+The AWS DeepRacer repository contains the configuration and launch files to enable ROS Navigation Stack on AWS DeepRacer and control the vehicle using teleop-twist-keyboard, along with the core components to integrate AWS DeepRacer with ROS Navigation stack. For detailed information, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
 
 The [AWS DeepRacer Evo](https://aws.amazon.com/deepracer/) robot is an 1/18th scale 4WD with monster truck chassis and ackermann drive type platform with independent servo and motors to control the wheels. The AWS DeepRacer hardware consists of two independent forward facing 4 MP RGB cameras, a 360 degree planar LiDAR (restricted to view only 300 degrees with reverse orientation), an integrated accelerometer and gyroscope providing the IMU data. The **deepracer_description** package contains the URDF model description of the car and arguments necessary to configure the sensors in Gazebo environment. 
 
@@ -42,4 +42,4 @@ The sensor_type argument in the deepracer.xacro file can be modified to load the
 ## Resources
 
 * [Getting started with AWS DeepRacer OpenSource](https://github.com/aws-deepracer/aws-deepracer-launcher/blob/main/getting-started.md)
-* [Introduction to ROS Navigation stack using DeepRacer Evo](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md).
+* [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
