@@ -133,7 +133,7 @@ This section will guide you through viewing the simulation and navigating the AW
 
 **1.2.1 – Open the Virtual Desktop**
 
-In nder the **Virtual Desktop** tab, selct **Launch Virtual Desktop**.
+In Rviz, under the **Virtual Desktop** tab, selct **Launch Virtual Desktop**.
 
 <p align="center">
 <img src="/media/dr-sim-launch-virtual-desktop-1.png" >
@@ -183,7 +183,7 @@ After a few seconds, the GZClient with the AWS DeepRacer device spawns in the `a
 
 To use the rviz tool to navigate the AWS DeepRacer car.
 
-!. Open another terminal to launch the rviz tool to send navigation goals to the AWS DeepRacer car.
+1. Open another terminal to launch the rviz tool to send navigation goals to the AWS DeepRacer car.
 
 ```
 rviz2
