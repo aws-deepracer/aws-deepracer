@@ -149,13 +149,13 @@ After a few seconds, the Virtual Desktop opens up in a new tab.
 
 Learn how to launch the the nav_amcl_demo_sim flow.
 
-Open a terminal in the **Virtual Desktop** with this command:
+1. Open a terminal in the **Virtual Desktop** with this command:
 
 <p align="center">
 <img src="/media/dr-sim-application-list-1.png" height="450" >
 </p>
 
-From the [deepracer_bringup](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_bringup) package, launch the `nav_amcl_demo_sim.launch.py`.
+2. From the [deepracer_bringup](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_bringup) package, launch the `nav_amcl_demo_sim.launch.py`using this command:
 
 
 ```
@@ -172,8 +172,8 @@ ros2 launch deepracer_bringup nav_amcl_demo_sim.launch.py
 
 After a few seconds, the GZClient with the AWS DeepRacer device spawns in the `aws-robomaker-bookstore-store` world. 
 
-1. Enlarge the window. 
-3. Zoom and scroll through the navigation menu until you find the AWS DeepRacer car in the center of the bookstore world.
+3. Enlarge the window. 
+4. Zoom and scroll through the simulation until you find the AWS DeepRacer car in the center of the bookstore world.
 
 <p align="center">
 <img src="/media/dr-sim-gazebo-1.png" height="450" >
@@ -227,7 +227,11 @@ The third party ROS2 packages required to satisfy ROS Nav2 requirements for a ro
 
 **2.1.1 - Create a development environment**
 
-To get started with ROS Nav2 bringup on the AWS DeepRacer, we first need to install ROS Navigation on the device. Follow the steps below to download and install ROS Navigation.
+To get started with ROS Nav2 bringup for AWS DeepRacer, first install ROS Navigation on the device.
+
+To download and install ROS Navigation:
+
+Run the following commands:
 
 ```
 sudo apt-get update -y
@@ -237,11 +241,15 @@ sudo apt install ros-foxy-nav2-bringup -y
 
 **2.1.2 - Stop the deepracer-core.service that is currently running on the device**
 
+Next, run this command:
+
 ```
 systemctl stop deepracer-core
 ```
 
 **2.1.3 - Download the robot related packages from AWS DeepRacer repository**
+
+To download the robot related packages from AWS DeepRacer repository, use this command:
 
 ```
 mkdir -p ~/deepracer_nav2_ws
