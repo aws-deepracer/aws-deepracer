@@ -18,7 +18,7 @@ Integrating the ROS2 stack with AWS DeepRacer device software allows you to run 
 
 Three main components of the Nav2 stack are planners, controllers, and recoveries. Planners and controllers are at the heart of a navigation task. The task of a planner is to compute a path to complete an objective function. Controllers, also known as local planners in ROS 1, are the way the robot follows the globally computed path or completes a local task. The controller will have access to a local environment representation to attempt to compute feasible control efforts for the robot base to follow. The general task in Nav2 for a controller is to compute a valid control effort to follow the global plan. Recoveries are used to get the robot out of a bad situation or attempt to deal with various forms of issues to make the system fault-tolerant. The goal of recoveries are to deal with unknown or failure conditions of the system and autonomously handle them. To learn more about other components such as behavior trees, navigation servers, and action servers, see the [Nav2 documentation](https://navigation.ros.org/). 
 
-**Nav2 tools at a glance** (from [Nav2 documentation](https://navigation.ros.org/))**:**
+**Nav2 tools** (from [Nav2 documentation](https://navigation.ros.org/))**:**
 
 * **Nav2 Planner**: Plans a path from A to B around obstacles 
 * **Nav2 Controller:** Controls the robot as it follows the path
@@ -57,7 +57,7 @@ In AWS DeepRacer, the [deepracer_gazebo](https://github.com/aws-deepracer/aws-de
 
 ## **Setup instructions**
 
-### **Using Nav2 stack with AWS DeepRacer**
+### **Use the Nav2 stack with AWS DeepRacer**
 
 In this demo we walk through two different flows using the ROS Nav2 stack with AWS DeepRacer. In the simulation flow, we can see how to use the Nav2 *Navigation2Goal*, while using the Smac global planner, and regulated pure pursuit controller in AWS RoboMaker. In the device flow, we will walkthrough the clone, build and installation of the new packages that help in running Nav2 stack on the AWS DeepRacer device.
 
@@ -76,25 +76,29 @@ These two main parts are explained in detail below:
 
 The simulation flow uses AWS RoboMaker integrated development environment. In order to complete this tutorial you’ll need an AWS account, with user permissions for AWS RoboMaker and [AWS Cloud9](https://aws.amazon.com/cloud9/).
 
-### **Part 1.1 – Clone and build the demo application in AWS RoboMaker Development Environment.**
+### **Part 1.1 – Clone and build the demo application in an AWS RoboMaker Development Environment.**
 
 This section will guide you through cloning and building the demo application.
 
 **1.1.1 – Create a development environment**
 
-We will be creating an AWS RoboMaker integrated development environment (IDE) to run the AWS DeepRacer simulation. From the AWS RoboMaker menu, select Development Environments then Create environment.
+In this walk-through you will learn how to create an AWS RoboMaker integrated development environment (IDE) to run the AWS DeepRacer simulation. 
+
+1. From the **AWS RoboMaker menu**, select **Development Environments** then Create environment.
 
 <p align="center">
 <img src="/media/dr-sim-robomaker-list-dev-env-1.png">
 </p>
 
-Name your environment **deepracer-nav2-env**, choose **Foxy (Latest)** as your ROS distribution, and click **Create**.
+2. Name your environment **deepracer-nav2-env**.
+3. Choose **Foxy (Latest)** as your ROS distribution.
+4. Select **Create**.
 
 <p align="center">
 <img src="/media/dr-sim-robomaker-create-dev-env-1.png">
 </p>
 
-After a few seconds, you should see that the development environment appears.
+After a few seconds, the development environment is ready.
 
 <p align="center">
 <img src="/media/dr-sim-robomaker-dev-env-1.png" height="450" >
@@ -102,7 +106,7 @@ After a few seconds, you should see that the development environment appears.
 
 **1.1.2 – Clone and build the demo application**
 
-From the bash terminal within the IDE, run the following commands to clone the demo application and install the needed dependencies.
+From the bash terminal within the IDE, run these commands to clone the demo application and install the needed dependencies:
 
 
 ```
@@ -117,7 +121,7 @@ cd aws-deepracer
 rosinstall deepracer_description
 ```
 
-The dependency install may take a few minutes to run. When completed, build the code.
+The dependency install may take a few minutes to run. When completed, use this command to build the code:
 
 ```
 colcon build
@@ -129,21 +133,23 @@ This section will guide you through viewing the simulation and navigating the AW
 
 **1.2.1 – Open the Virtual Desktop**
 
-Open the Virtual Desktop in your Development Environment.
+In nder the **Virtual Desktop** tab, selct **Launch Virtual Desktop**.
 
 <p align="center">
 <img src="/media/dr-sim-launch-virtual-desktop-1.png" >
 </p>
 
-After a few seconds, you should see that the Virtual Desktop opens up in a new tab.
+After a few seconds, the Virtual Desktop opens up in a new tab.
 
 <p align="center">
 <img src="/media/dr-sim-virtual-desktop-1.png" height="450" >
 </p>
 
-**1.2.2 – Launch the nav_amcl_demo_sim flow**
+**1.2.2 – Launching the nav_amcl_demo_sim flow**
 
-Open a terminal in the Virtual Desktop.
+Learn how to launch the the nav_amcl_demo_sim flow.
+
+Open a terminal in the **Virtual Desktop** with this command:
 
 <p align="center">
 <img src="/media/dr-sim-application-list-1.png" height="450" >
@@ -164,15 +170,20 @@ ros2 launch deepracer_bringup nav_amcl_demo_sim.launch.py
 <img src="/media/dr-sim-cli-1.png" height="450" >
 </p>
 
-After a few seconds, you should see the GZClient with the AWS DeepRacer device spawned in `aws-robomaker-bookstore-store` world. Enlarge the window, zoom, and scroll until you find the AWS DeepRacer in the center of the bookstore world.
+After a few seconds, the GZClient with the AWS DeepRacer device spawns in the `aws-robomaker-bookstore-store` world. 
+
+1. Enlarge the window. 
+3. Zoom and scroll through the navigation menu until you find the AWS DeepRacer car in the center of the bookstore world.
 
 <p align="center">
 <img src="/media/dr-sim-gazebo-1.png" height="450" >
 </p>
 
-**1.2.3 – Using rviz tool to navigate the AWS DeepRacer car**
+**1.2.3 – Use the rviz tool to navigate the AWS DeepRacer car**
 
-Next, open another terminal to launch rviz tool to send navigation goals to the AWS DeepRacer.
+To use the rviz tool to navigate the AWS DeepRacer car.
+
+!. Open another terminal to launch the rviz tool to send navigation goals to the AWS DeepRacer car.
 
 ```
 rviz2
@@ -182,9 +193,11 @@ rviz2
 <img src="/media/dr-sim-rviz-1.png" height="450" >
 </p>
 
-Open the `nav2_default_view.rviz` file from the [deepracer_description](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_description) package. In the rviz window you should now see the bird's-eye view of the robot's location. Set the initial robot location by choosing the *2D Pose Estimate* tool from the toolbar, then placing the arrow pointing up from the robot's location. The robot footprint should now appear as a green square, and the map should appear highlighted in color.
-
-This means that the AWS DeepRacer is now ready to navigate! Use the middle mouse scroll to zoom out and get a view of the entire map. Use the *Navigation2 Goal* button on the tool bar to set a goal for the AWS DeepRacer to move forward in the map. The AWS DeepRacer should immediately begin moving to the location you selected.
+2. Open the `nav2_default_view.rviz` file from the [deepracer_description](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_description) package. In the rviz window you should now see the bird's-eye view of the robot's location. 
+3. Set the initial robot location by choosing the *2D Pose Estimate* tool from the toolbar.
+4. Place the arrow pointing up from the robot's location. The robot footprint should now appear as a green square, and the map should appear highlighted in color. This means that the AWS DeepRacer is now ready to navigate! 
+5. If you have a middle mouse scroll, use it to zoom out and get a view of the entire map. 
+6. Use the *Navigation2 Goal* button on the tool bar to set a goal for the AWS DeepRacer to move forward in the map. The AWS DeepRacer should immediately begin moving to the location you select.
 
 <p align="center">
 <img src="/media/dr-sim-open-rviz-1.gif" height="450" >
