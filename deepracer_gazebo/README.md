@@ -55,11 +55,11 @@ The source code is released under [Apache 2.0](https://aws.amazon.com/apache-2-0
 | Topic name | Message type | Description |
 | ---------- | ------------ | ----------- |
 |`/left_front_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
-|`/right_front_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
-|`/left_rear_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
-|`/right_rear_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
-|`/left_steering_hinge_position_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
-|`/right_steering_hinge_position_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left front wheel.|
+|`/right_front_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the right front wheel.|
+|`/left_rear_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the left rear wheel.|
+|`/right_rear_wheel_velocity_controller/commands`|`Float64MultiArray`|This message is used to send the joint velocity command values through gazebo ros control to the right rear wheel.|
+|`/left_steering_hinge_position_controller/commands`|`Float64MultiArray`|This message is used to send the joint position command values through gazebo ros control to the left steering hinge.|
+|`/right_steering_hinge_position_controller/commands`|`Float64MultiArray`|This message is used to send the joint position command values through gazebo ros control to the right steering hinge.|
 |`/odom`|`nav_msgs::msg::Odometry`|This message is used to publish the odometry message containing the pose and twist data.|
 
 #### TF Transformations
