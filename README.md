@@ -37,6 +37,6 @@ The AWS DeepRacer repository consists of the following packages:
 
 
 ## Resources
-
+* [Frequently Asked Questions & Known Issues](https://github.com/aws-deepracer/aws-deepracer/blob/main/frequently_asked_questions.md)
 * [Getting started with AWS DeepRacer OpenSource](https://github.com/aws-deepracer/aws-deepracer-launcher/blob/main/getting-started.md)
 * [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md)
