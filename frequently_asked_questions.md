@@ -4,7 +4,7 @@ This repository contains the configuration and launch files to enable ROS Naviga
 
 Here we make notes regarding the areas where further development and support is needed, and the known issues in the simulation and device flow. For detailed information about using ROS Nav2 stack with AWS DeepRacer, see [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md).
 
-## Sim Flow
+## Simulation Flow
 
 As explained in the [Introduction to the ROS Navigation stack using AWS DeepRacer Evo](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md), we showcase how to use the Nav2 *Navigation2Goal* in the simulation flow to use the ROS Navigation stack packages to autonomously navigate from initial position to goal position. The demo shows one of the ways in which ROS Navigation stack can be used with the AWS DeepRacer simulation artifacts. The document also contains the setup instructions to reproduce the demonstration in AWS Robomaker Integrated Development Environment which has the ROS2 Foxy development setup preinstalled.
 
