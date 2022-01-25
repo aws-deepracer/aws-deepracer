@@ -25,7 +25,7 @@ from nav2_common.launch import RewrittenYaml
 
 
 def generate_launch_description():
-    deepracer_bringup = get_package_share_directory('deepracer_bringup')
+    deepracer_bringup_dir = get_package_share_directory('deepracer_bringup')
     use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time',
                                                             default='true')
     autostart = launch.substitutions.LaunchConfiguration('autostart')
@@ -67,7 +67,7 @@ def generate_launch_description():
 
         launch.actions.DeclareLaunchArgument(
             'params',
-            default_value=[deepracer_bringup,
+            default_value=[deepracer_bringup_dir,
                            '/config/nav2_params.yaml'],
             description='Full path to the ROS2 parameters file to use'),
 
