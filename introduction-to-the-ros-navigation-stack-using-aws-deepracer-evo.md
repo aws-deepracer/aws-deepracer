@@ -310,7 +310,7 @@ ros2 launch deepracer_bringup slam_toolbox.launch.py use_sim_time:=False params_
 Using your favorite tele-op method (Example: [https://github.com/ros2/teleop_twist_keyboard](https://github.com/ros2/teleop_twist_keyboard)), move the AWS DeepRacer around the required space smoothly and slowly. You can view the map in RViz. To save this map to file:
 
 ```
-`ros2 run nav2_map_server map_saver_cli -f ~/map`
+ros2 run nav2_map_server map_saver_cli -f ~/map
 ```
 
 
