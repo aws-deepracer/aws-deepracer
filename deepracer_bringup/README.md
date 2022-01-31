@@ -79,9 +79,9 @@ The source code is released under [Apache 2.0](https://aws.amazon.com/apache-2-0
 
 ## Usage
 
-1. [Simulation Flow](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md)
+1. [Simulation Flow](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md#part-11--clone-and-build-the-demo-application-in-an-aws-robomaker-development-environment)
 
-1. [Device Flow](https://github.com/aws-deepracer/deepracer/Introduction-to-ROS-Navigation-stack-using-DeepRacer-Evo.md)
+1. [Device Flow](https://github.com/aws-deepracer/aws-deepracer/blob/main/introduction-to-the-ros-navigation-stack-using-aws-deepracer-evo.md#part-21--clone-and-build-the-robot-packages-on-the-aws-deepracer-device)
 
 
 ## Resources
