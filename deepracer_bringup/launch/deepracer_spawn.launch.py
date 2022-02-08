@@ -27,9 +27,9 @@ from launch.event_handlers import OnProcessExit
 
 
 def generate_launch_description():
-    deepracer_description = get_package_share_directory('deepracer_description')
-    deepracer_bringup = get_package_share_directory('deepracer_bringup')
-    default_model_path = os.path.join(deepracer_description, 'models/xacro/deepracer/deepracer.xacro')
+    deepracer_description_dir = get_package_share_directory('deepracer_description')
+    deepracer_bringup_dir = get_package_share_directory('deepracer_bringup')
+    default_model_path = os.path.join(deepracer_description_dir, 'models/xacro/deepracer/deepracer.xacro')
 
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
@@ -103,7 +103,7 @@ def generate_launch_description():
             output='screen',
             arguments=['0.136966', '0', '0.143272', '0', '0.2618', '0', 'base_link', 'camera_link'],
             parameters=[
-        		deepracer_bringup + '/config/static_tf.yaml'
+                deepracer_bringup_dir + '/config/static_tf.yaml'
             ]
             ),
         launch_ros.actions.Node(
@@ -112,7 +112,7 @@ def generate_launch_description():
             output='screen',
             arguments=['0.02913', '0', '0.884699', '0', '0', '3.1416', 'base_link', 'laser'],
             parameters=[
-        		deepracer_bringup + '/config/static_tf_sim.yaml'
+                deepracer_bringup_dir + '/config/static_tf_sim.yaml'
             ]
             )
     ])

@@ -23,7 +23,7 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
-    deepracer_bringup = get_package_share_directory('deepracer_bringup')
+    deepracer_bringup_dir = get_package_share_directory('deepracer_bringup')
 
     # ros gazebo launcher
     gazebo_dir = get_package_share_directory('gazebo_ros')
@@ -41,7 +41,7 @@ def generate_launch_description():
 
     spawn_deepracer = launch.actions.IncludeLaunchDescription(
         launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(deepracer_bringup, 'launch', 'deepracer_spawn.launch.py'))
+            os.path.join(deepracer_bringup_dir, 'launch', 'deepracer_spawn.launch.py'))
     )
 
     return LaunchDescription([DeclareLaunchArgument(

@@ -24,12 +24,12 @@ from ament_index_python.packages import get_package_share_directory
 
 # demo of deepracer simulation in aws bookstore world with navigation and amcl
 def generate_launch_description():
-    deepracer_bringup = get_package_share_directory('deepracer_bringup')
-    nav2_bringup = get_package_share_directory('nav2_bringup')
+    deepracer_bringup_dir = get_package_share_directory('deepracer_bringup')
+    nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     bookstore_path = get_package_share_directory('aws_robomaker_bookstore_world')
     bookstore_world = os.path.join(bookstore_path, 'worlds', 'bookstore.world')
     bookstore_map = os.path.join(bookstore_path, 'maps', 'turtlebot3_waffle_pi', 'map.yaml')
-    nav_params = os.path.join(deepracer_bringup, 'config', 'nav2_params_nav_amcl_sim_demo.yaml')
+    nav_params = os.path.join(deepracer_bringup_dir, 'config', 'nav2_params_nav_amcl_sim_demo.yaml')
 
     world_cfg = LaunchConfiguration('world')
     map_cfg = LaunchConfiguration('map')
@@ -42,17 +42,17 @@ def generate_launch_description():
     include_files = GroupAction([
         # start deepracer simulation
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([deepracer_bringup, '/launch/deepracer_sim.launch.py']),
+            PythonLaunchDescriptionSource([deepracer_bringup_dir, '/launch/deepracer_sim.launch.py']),
             launch_arguments = {'world': world_cfg}.items()
          ),
         # start navigation planner and controller
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([deepracer_bringup, '/launch/deepracer_navigation_sim.launch.py']),
+            PythonLaunchDescriptionSource([deepracer_bringup_dir, '/launch/deepracer_navigation_sim.launch.py']),
             launch_arguments = {'params': params_cfg}.items()
         ),
         # start localization (amcl) and map_server
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([nav2_bringup, '/launch/localization_launch.py']),
+            PythonLaunchDescriptionSource([nav2_bringup_dir, '/launch/localization_launch.py']),
             launch_arguments={'map': map_cfg,
                               'params_file': params_cfg}.items()),
     ])
