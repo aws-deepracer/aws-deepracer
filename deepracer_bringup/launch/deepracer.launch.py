@@ -52,10 +52,10 @@ def generate_launch_description():
             ),
 
         launch_ros.actions.Node(
-            package='rplidar_ros',
+            package='rplidar_ros2',
             namespace='',
-            executable='rplidarNode',
-            name='rplidarNode',
+            executable='rplidar_scan_publisher',
+            name='rplidar_scan_publisher',
             parameters=[{
                     'serial_port': '/dev/ttyUSB0',
                     'serial_baudrate': 115200,

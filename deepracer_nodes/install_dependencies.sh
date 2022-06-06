@@ -8,4 +8,4 @@ git checkout foxy-devel
 echo ""
 echo "Cloning the rplidar_ros package"
 cd ~/deepracer_nav2_ws/aws-deepracer/deepracer_nodes
-git clone https://github.com/youngday/rplidar_ros2.git
+git clone https://github.com/Slamtec/rplidar_ros.git -b ros2

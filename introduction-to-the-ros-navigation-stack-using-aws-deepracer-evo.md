@@ -224,7 +224,7 @@ To delete your development environment:
 
 This section will guide you through cloning and building the AWS DeepRacer robot packages required for ROS Navigation. As part of this, we shall fetch and install the third party ROS2 packages and the AWS DeepRacer packages required to make the AWS DeepRacer device compatible with ROS Nav2 stack. This provides the required interfaces and transforms for ROS Nav2 stack to initialize.
 
-The third party ROS2 packages required to satisfy ROS Nav2 requirements for a robot include the [`rplidar_ros`](https://github.com/youngday/rplidar_ros2) package, [`rf2o_laser_odometry`](https://github.com/MAPIRlab/rf2o_laser_odometry) package. We also provide the [`aws-deepracer-camera-pkg`](https://github.com/aws-deepracer/aws-deepracer-camera-pkg), [`aws-deepracer-servo-pkg`](https://github.com/aws-deepracer/aws-deepracer-servo-pkg), `cmd_velocity_to_servo-pkg`, `enable_deepracer_nav_pkg`, `aws-deepracer_interfaces_pkg` and the transforms as part of the launcher in [deepracer_bringup](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_bringup) ([`deepracer.launch.py`](https://github.com/aws-deepracer/aws-deepracer/blob/main/deepracer_bringup/launch/deepracer.launch.py)).
+The third party ROS2 packages required to satisfy ROS Nav2 requirements for a robot include the [`rplidar_ros`](https://github.com/Slamtec/rplidar_ros/tree/ros2) package, [`rf2o_laser_odometry`](https://github.com/MAPIRlab/rf2o_laser_odometry) package. We also provide the [`aws-deepracer-camera-pkg`](https://github.com/aws-deepracer/aws-deepracer-camera-pkg), [`aws-deepracer-servo-pkg`](https://github.com/aws-deepracer/aws-deepracer-servo-pkg), `cmd_velocity_to_servo-pkg`, `enable_deepracer_nav_pkg`, `aws-deepracer_interfaces_pkg` and the transforms as part of the launcher in [deepracer_bringup](https://github.com/aws-deepracer/aws-deepracer/tree/main/deepracer_bringup) ([`deepracer.launch.py`](https://github.com/aws-deepracer/aws-deepracer/blob/main/deepracer_bringup/launch/deepracer.launch.py)).
 
 **2.1.1 - Create a development environment**
 
@@ -259,7 +259,7 @@ git clone https://github.com/aws-deepracer/aws-deepracer.git
 cd ~/deepracer_nav2_ws/aws-deepracer/
 ```
 
-**2.1.4 - Clone the [rf2o_laser_odometry](https://github.com/MAPIRlab/rf2o_laser_odometry) and [rplidar_ros](https://github.com/youngday/rplidar_ros2) dependency packages on the AWS DeepRacer device**
+**2.1.4 - Clone the [rf2o_laser_odometry](https://github.com/MAPIRlab/rf2o_laser_odometry) and [rplidar_ros](https://github.com/Slamtec/rplidar_ros/tree/ros2) dependency packages on the AWS DeepRacer device**
 
 ```
 cd ~/deepracer_nav2_ws/aws-deepracer/deepracer_nodes && ./install_dependencies.sh
