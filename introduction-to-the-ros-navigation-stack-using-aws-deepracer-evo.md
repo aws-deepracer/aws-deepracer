@@ -119,7 +119,6 @@ sudo apt update
 rosdep install -i -r -y --from-paths .
 cd aws-deepracer
 rosinstall deepracer_description
-cd gazebo_ros2_control && git reset --hard 04b2c6f0ff0e977b6fc6af5dfc5e96e5bdd570d0 && cd ..
 ```
 
 The dependency install may take a few minutes to run. When completed, use this command to build the code:
