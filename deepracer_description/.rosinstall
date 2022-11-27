@@ -4,6 +4,6 @@
 # USE THE rosinstall TOOL INSTEAD.
 # IF YOU CHANGE IT, USE rosinstall FOR THE CHANGES TO TAKE EFFECT
 - git: {local-name: ../gazebo_ros2_control, uri: 'https://github.com/ros-simulation/gazebo_ros2_control.git',
-    version: master}
+    version: 04b2c6f0ff0e977b6fc6af5dfc5e96e5bdd570d0}
 - git: {local-name: ../aws-robomaker-bookstore-world, uri: 'https://github.com/aws-robotics/aws-robomaker-bookstore-world.git',
     version: ros2}
