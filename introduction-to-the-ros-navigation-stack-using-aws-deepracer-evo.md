@@ -276,7 +276,7 @@ rosws update
 **2.1.6 - Build the robot packages**
 
 ```
-cd ~/deepracer_nav2_ws/aws-deepracer/ && colcon build --packages-select deepracer_interfaces_pkg deepracer_bringup cmdvel_to_servo_pkg enable_deepracer_nav_pkg rf2o_laser_odometry rplidar_ros camera_pkg servo_pkg
+cd ~/deepracer_nav2_ws/aws-deepracer/ && colcon build --packages-select deepracer_interfaces_pkg deepracer_bringup cmdvel_to_servo_pkg enable_deepracer_nav_pkg rf2o_laser_odometry rplidar_ros2 camera_pkg servo_pkg
 
 ```
 
