@@ -36,7 +36,7 @@ set(dependencies
   tf2
 )
 
-install(DIRECTORY launch config
+install(DIRECTORY launch config map
   DESTINATION share/${PROJECT_NAME}
 )
 
